@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Props } from ".";
+import styled from 'styled-components';
+import { Props } from '.';
 
 export const Wrapper = styled.div`
   border-bottom: 1px solid #e5e5e5;
@@ -37,80 +37,80 @@ export const ListItem = styled.button<Props>`
   width: ${(props) => props.width};
   text-align: ${(props) => props.testAlign};
   padding: ${(props) =>
-    props.type === "submit"
-      ? "2px"
-      : props.type === "button"
-      ? "5px 10px"
+    props.type === 'submit'
+      ? '2px'
+      : props.type === 'button'
+      ? '5px 10px'
       : props.type};
   border-radius: ${(props) =>
-    props.type === "submit"
-      ? "none"
-      : props.type === "button"
-      ? "8px"
+    props.type === 'submit'
+      ? 'none'
+      : props.type === 'button'
+      ? '8px'
       : props.type};
   background: none;
   border: none;
   outline: none;
   border: ${(props) =>
-    props.type === "submit"
-      ? "none"
-      : props.type === "button"
-      ? "1px solid #56ccf2"
+    props.type === 'submit'
+      ? 'none'
+      : props.type === 'button'
+      ? '1px solid #56ccf2'
       : props.type};
   color: ${(props) =>
-    props.type === "submit"
-      ? "rgba(255, 255, 255, 0.4)"
-      : props.type === "button"
-      ? "#56ccf2"
+    props.type === 'submit'
+      ? 'rgba(255, 255, 255, 0.4)'
+      : props.type === 'button'
+      ? '#56ccf2'
       : props.type};
   font-weight: 700;
   &:hover {
     color: ${(props) =>
-      props.type === "submit"
-        ? "#cacaca"
-        : props.type === "button"
-        ? "white"
+      props.type === 'submit'
+        ? '#cacaca'
+        : props.type === 'button'
+        ? 'white'
         : props.type};
     background-color: ${(props) =>
-      props.type === "submit"
-        ? "none"
-        : props.type === "button"
-        ? "#56ccf2"
+      props.type === 'submit'
+        ? 'none'
+        : props.type === 'button'
+        ? '#56ccf2'
         : props.type};
   }
 
   &.activeTab {
     background-color: ${(props) =>
-      props.type === "submit"
-        ? "none"
-        : props.type === "button"
-        ? "#56ccf2"
+      props.type === 'submit'
+        ? 'none'
+        : props.type === 'button'
+        ? '#56ccf2'
         : props.type};
     border-bottom: ${(props) =>
-      props.type === "submit"
-        ? "3px solid #56ccf2"
-        : props.type === "button"
-        ? "none"
+      props.type === 'submit'
+        ? '3px solid #56ccf2'
+        : props.type === 'button'
+        ? 'none'
         : props.type};
     color: ${(props) =>
-      props.type === "submit"
-        ? "white"
-        : props.type === "button"
-        ? "white"
-        : "rgba(255, 255, 255, 0.4)"};
+      props.type === 'submit'
+        ? 'white'
+        : props.type === 'button'
+        ? 'white'
+        : 'rgba(255, 255, 255, 0.4)'};
     &:hover {
       background: transparent;
       border-bottom: ${(props) =>
-        props.type === "submit"
-          ? "3px solid #56ccf2"
-          : props.type === "button"
-          ? "none"
+        props.type === 'submit'
+          ? '3px solid #56ccf2'
+          : props.type === 'button'
+          ? 'none'
           : props.type};
       border: ${(props) =>
-        props.type === "submit"
-          ? "none"
-          : props.type === "button"
-          ? "1px solid #56ccf2"
+        props.type === 'submit'
+          ? 'none'
+          : props.type === 'button'
+          ? '1px solid #56ccf2'
           : props.type};
     }
   }

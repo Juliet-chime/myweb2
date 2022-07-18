@@ -1,0 +1,27 @@
+#content3 .css-yk16xz-control {
+  cursor: pointer;
+  border: 1px solid rgba(86, 204, 242, 0.5);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  height: 45px;
+  width: 100%;
+  color: #333333;
+  background: rgba(86, 204, 242, 0.05);
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  outline: none;
+}
+
+.css-yk16xz-control :focus {
+  border: 1px solid rgba(86, 204, 242) !important;
+  outline: 0 !important;
+  background-color: transparent !important;
+}
+
+.css-yk16xz-control :active {
+  border: 1px solid rgba(86, 204, 242) !important;
+  outline: 0 !important;
+  background-color: transparent !important;
+}

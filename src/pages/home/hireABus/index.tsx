@@ -1,16 +1,15 @@
-import React from "react";
-import HireOneWay from "./oneway";
-import HireRoundTrip from "./roundtrip";
-
+import React from 'react'
+import HireOneWay from './oneway'
+import HireRoundTrip from './roundtrip'
 
 const roundBookingTripToTab = {
   ONEWAY: <HireOneWay />,
-  ROUNDTRIP: <HireRoundTrip/>,
-};
+  ROUNDTRIP: <HireRoundTrip />,
+}
 
 const roundBookingTripOptions = [
-  { label: "One way", value: "ONEWAY" },
-  { label: "Round trip", value: "ROUNDTRIP" },
-];
+  { label: 'One way', value: 'ONEWAY' },
+  { label: 'Round trip', value: 'ROUNDTRIP' },
+]
 
-export { roundBookingTripOptions, roundBookingTripToTab };
+export { roundBookingTripOptions, roundBookingTripToTab }

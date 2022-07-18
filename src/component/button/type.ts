@@ -1,9 +1,9 @@
 export interface ButtonProps {
-  buttonType?: "primary" | "secondary" | string;
+  buttonType?: 'primary' | 'secondary' | string;
   type?: any;
-  text?: string;
+  text?: any;
   disabled?: boolean;
-  onClick?: () => void;
+  onClick?: (props:any) => void;
   className?: string;
   icon?: any;
   Style?: any;
@@ -13,4 +13,5 @@ export interface ButtonProps {
   borderRadius?: string;
   fontSize?: string;
   margin?: string;
+  smallWidth?:string;
 }

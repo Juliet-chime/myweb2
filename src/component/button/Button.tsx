@@ -1,7 +1,7 @@
-import React from "react";
-import { ButtonProps } from "./type";
-import "./index.css";
-import { ButtonDiv } from "./style";
+import React from 'react';
+import { ButtonProps } from './type';
+import './index.css';
+import { ButtonDiv } from './style';
 
 const Button = ({
   text,
@@ -12,6 +12,7 @@ const Button = ({
   disabled,
   icon,
   width,
+  smallWidth,
   background,
   color,
   borderRadius,
@@ -23,7 +24,7 @@ const Button = ({
       type={type}
       style={Style}
       title={text}
-      className={className || "Button_Wrap"}
+      className={className || 'Button_Wrap'}
       onClick={onClick}
       disabled={disabled}
       width={width}

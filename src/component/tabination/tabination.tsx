@@ -57,7 +57,8 @@ const Tabination = () => {
         <Tabs active={active} setActive={setActive}/>
         <Content>
           {TABS.map((tab:any)=>(
-            <Tab>{tab}</Tab>
+          
+            <Tab key={Math.floor(Math.random())}>{tab}</Tab>
           ))}
         </Content>
       </Card>

@@ -1,0 +1,11 @@
+.seat1{
+    filter: invert(73%) sepia(17%) saturate(6196%) hue-rotate(98deg) brightness(94%) contrast(84%);
+}
+
+/* .seee input:checked .seat1{
+    filter: invert(78%) sepia(90%) saturate(3087%) hue-rotate(164deg) brightness(91%) contrast(110%);
+} */
+
+#seat-1:checked+.seat-one .seatnumbers>img {
+    filter: invert(78%) sepia(90%) saturate(3087%) hue-rotate(164deg) brightness(91%) contrast(110%);
+}

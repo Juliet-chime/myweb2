@@ -1,7 +1,7 @@
 import React from 'react'
 import styled,{css} from 'styled-components'
 
-export const TABS = ["cute","Funny","goat"]
+export const TABS = ['cute','Funny','goat']
 
 const Row = styled.div`
 display:flex;
@@ -29,7 +29,7 @@ outline:none;
 height:30px;
 cursor:Pointer;
 border-bottom: 1px solid rgba(234,435,348,0.5);
-color:${(p)=> p.active ? "rgba(255,255,255,0.85)" : "rgba(255,255,255,0.25)"};
+color:${(p)=> p.active ? 'rgba(255,255,255,0.85)' : 'rgba(255,255,255,0.25)'};
 background:#ff6f91;
 border:unset;
 `
@@ -45,7 +45,7 @@ const Tabs = ({active, setActive}:Props) => {
     <Underline active={active} />
     {
         TABS.map((tab,index)=>(
-            <Button active={active === index} onClick={()=>setActive(index)}>{tab}</Button>
+            <Button active={active === index} onClick={()=>setActive(index)} key={index}>{tab}</Button>
         ))
     }
    </Row>

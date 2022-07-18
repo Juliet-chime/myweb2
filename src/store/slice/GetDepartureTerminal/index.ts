@@ -1,45 +1,45 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { apiRequest } from "../../api";
-import apiRoutes from "../../apiRoutes";
-import { DepartureProps } from "./deptType";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { apiRequest } from '../../api'
+import apiRoutes from '../../apiRoutes'
+import { DepartureProps } from './deptType'
 
 const initialState: DepartureProps = {
   isLoading: false,
-  status: "idle",
+  status: 'idle',
   departureTerminal: [],
   error: [],
-};
+}
 
-export const getDepartureTerminal = createAsyncThunk("authUser", async (userToken:any) => {
+export const getDepartureTerminal = createAsyncThunk('deptTerminal', async () => {
   try {
-    const response = await apiRequest(apiRoutes.DepartureTerminals(), "get",null,userToken);
-    return response.data;
+    const response = await apiRequest(apiRoutes.DepartureTerminals(), 'get', null)
+    return response.data
   } catch (err) {
-    return err;
+    return err
   }
-});
+})
 
-export const  getDepartureTerminalSlice = createSlice({
-  name: "auth",
+export const getDepartureTerminalSlice = createSlice({
+  name: 'depatureTerminal',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase( getDepartureTerminal.pending, (state) => {
-        state.isLoading = true;
-        state.status = "loading";
+      .addCase(getDepartureTerminal.pending, (state) => {
+        state.isLoading = true
+        state.status = 'loading'
       })
-      .addCase( getDepartureTerminal.fulfilled, (state, { payload }) => {
-        state.isLoading = false;
-        state.status = "succeeded";
-        state.departureTerminal = payload?.Object?.Items;
+      .addCase(getDepartureTerminal.fulfilled, (state, { payload }) => {
+        state.isLoading = false
+        state.status = 'succeeded'
+        state.departureTerminal = payload?.Object?.Items
       })
-      .addCase( getDepartureTerminal.rejected, (state, { payload }) => {
-        state.isLoading = false;
-        state.status = "failed";
-        state.error = payload;
-      });
+      .addCase(getDepartureTerminal.rejected, (state, { payload }) => {
+        state.isLoading = false
+        state.status = 'failed'
+        state.error = payload
+      })
   },
-});
+})
 
-export default  getDepartureTerminalSlice.reducer;
+export default getDepartureTerminalSlice.reducer

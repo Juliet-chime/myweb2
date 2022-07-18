@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   ExpandMenuButton,
   ExpandMenuDiv,
   ExpandSubRoute,
   ExpandSubRoutesContainer,
-} from "./style";
-import { FaAngleDown, FaAngleRight } from "react-icons/fa";
+} from './style';
+import { FaAngleDown, FaAngleRight } from 'react-icons/fa';
 
 const ExpandMenu = ({ route }: any) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

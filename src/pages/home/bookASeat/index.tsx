@@ -1,6 +1,6 @@
-import React from "react";
-import OneWay from "./oneWay";
-import RoundTrip from "./roundTrip";
+import React from 'react';
+import OneWay from './oneWay';
+import RoundTrip from './roundTrip';
 
 const bookingTripToTab = {
   ONEWAY: <OneWay />,
@@ -8,8 +8,8 @@ const bookingTripToTab = {
 };
 
 const bookingTripOptions = [
-  { label: "One way", value: "ONEWAY" },
-  { label: "Round trip", value: "ROUNDTRIP" },
+  { label: 'One way', value: 'ONEWAY' },
+  { label: 'Round trip', value: 'ROUNDTRIP' },
 ];
 
 export { bookingTripOptions, bookingTripToTab };

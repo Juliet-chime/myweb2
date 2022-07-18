@@ -29,25 +29,24 @@ interface Props {
     defaultValue?: string;
     children?:any;
 }
-const types = [{option:'Cash',value:"CASH"}, {option:'Credit Card',value:"CREDIT CARD"}, {option:'Bitcoin',value:"BITCOIN"}];
+const types = [{option:'Cash',value:'CASH'}, {option:'Credit Card',value:'CREDIT CARD'}, {option:'Bitcoin',value:'BITCOIN'}];
 
 type TPendingDocument =
-  | "CASH"
-  | "CREDIT CARD"
-  | "BITCOIN"
+  | 'CASH'
+  | 'CREDIT CARD'
+  | 'BITCOIN'
 
 const typesToTableTab = {
-    "CASH":() =><p>helo CASH</p>,
-    "CREDIT CARD":() =><p>helo CREDITCARD</p>,
-    "BITCOIN": () =><p>helo BITCOIN</p>,
+    'CASH':() =><p>helo CASH</p>,
+    'CREDIT CARD':() =><p>helo CREDITCARD</p>,
+    'BITCOIN': () =><p>helo BITCOIN</p>,
   };
 
-function TabGroup({children,defaultValue = "All"}:Props) {
+function TabGroup({children,defaultValue = 'All'}:Props) {
 
   const [active, setActive] = useState(types[0].value);
-  console.log(active)
   const [pendingDocument, setPendingDocument] =
-    useState<TPendingDocument>("CASH");
+    useState<TPendingDocument>('CASH');
 
   const onTabClicked = (value:any)=>{
 // setSelectedValue(value)
@@ -56,9 +55,6 @@ setPendingDocument(selectvalue)
 setActive(value)
   }
 
-  const helo = (name:any) =>{
-    console.log(name)
-  }
 
   return (
     <>

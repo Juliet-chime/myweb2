@@ -1,8 +1,8 @@
-import React from "react";
-import Button from "../button/Button";
-import logo from "../img/logo.png";
-import { FaBars } from "react-icons/fa";
-import Menu from "./Menu";
+import React from 'react';
+import Button from '../button/Button';
+import logo from '../img/logo.png';
+import { FaBars } from 'react-icons/fa';
+import Menu from './Menu';
 import {
   DrawerButton,
   ListMenu,
@@ -11,7 +11,7 @@ import {
   NavContainer,
   NavRoute,
   NavRoutes,
-} from "./style";
+} from './style';
 
 interface props {
   toggleDrawer?: () => void;
@@ -22,9 +22,9 @@ const Navbar = ({ toggleDrawer, routes }: props) => {
   return (
     <NavbarDiv>
       <NavContainer>
-        <div style={{ display: "flex", gap: "1rem" }}>
+        <div style={{ display: 'flex', gap: '1rem' }}>
           <DrawerButton onClick={toggleDrawer}>
-            <FaBars style={{ color: "black", fontSize: "18px" }} />
+            <FaBars style={{ color: 'black', fontSize: '18px' }} />
           </DrawerButton>
           <>
             <img src={logo} alt="" className="home-logo" width="60" />
@@ -47,7 +47,7 @@ const Navbar = ({ toggleDrawer, routes }: props) => {
             <Button
               type="submit"
               text="Sign in / Sign up"
-              onClick={() => console.log("hello")}
+              onClick={() => console.log('hello')}
               width="100%"
               background="#56ccf2"
               borderRadius="8px"

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Wrapper, HorizontalTabList, ListItem } from "./style";
+import React, { useEffect, useState } from 'react';
+import { HorizontalTabList, ListItem } from './style';
 
-type SelectOption = {
-  label?: string;
-  value?: string;
-};
+// type SelectOption = {
+//   label?: string;
+//   value?: string;
+// };
 
 export interface Props {
   border?: any;
@@ -21,14 +21,14 @@ export interface Props {
   defaultValue?: string;
   onChange?: any;
   borderRadius?: any;
-  type?: "button" | "submit" | "reset";
-  buttonType?: "DEFAULT" | "SECONDARY" | "TRANSPARENT";
+  type?: 'button' | 'submit' | 'reset';
+  buttonType?: 'DEFAULT' | 'SECONDARY' | 'TRANSPARENT';
 }
 
 export default function HorizonalTab({
   options,
   onChange,
-  defaultValue = "ALL",
+  defaultValue = 'ALL',
   width,
   background,
   border,
@@ -43,7 +43,7 @@ export default function HorizonalTab({
   type,
   buttonType,
 }: Props) {
-  const [selectedLabel, setSelectedLabel] = useState<string>("");
+  const [selectedLabel, setSelectedLabel] = useState<string>('');
   const [selectedValue, setSelectedValue] = useState<string>(defaultValue);
 
   const onTabClicked = (value: string) => () => {
@@ -78,7 +78,7 @@ export default function HorizonalTab({
             type={type}
             onClick={onTabClicked(option?.value)}
             key={option.value}
-            className={selectedLabel === option.label ? "activeTab" : ""}
+            className={selectedLabel === option.label ? 'activeTab' : ''}
           >
             {option.label}
           </ListItem>

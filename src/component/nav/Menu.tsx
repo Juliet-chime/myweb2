@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   MenuButton,
   SubRoute,
   SubRouteMenu,
   SubRoutesContainer,
-} from "./style";
-import { FaCaretDown } from "react-icons/fa";
+} from './style';
+import { FaCaretDown } from 'react-icons/fa';
 
 const Menu = ({ route }: any) => {
   return (

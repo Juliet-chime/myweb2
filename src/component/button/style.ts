@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { ButtonProps } from "./type";
+import styled, { css } from 'styled-components';
+import { ButtonProps } from './type';
 
 export const ButtonDiv = styled.button<ButtonProps>`
   width: ${(props) => props.width};
@@ -14,9 +14,13 @@ export const ButtonDiv = styled.button<ButtonProps>`
   border-radius: ${(props) => props.borderRadius};
   border: none;
   outline: none;
+  cursor: pointer;
   transition: 1s ease;
   padding: 0 10px;
   &:disabled {
-    background: #696969 !important;
+    background: rgba(105, 105, 105, 0.3) !important;
   }
+  @media (max-width: 1024px) {
+    width: ${(props) => props.smallWidth};
+    }
 `;

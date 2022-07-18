@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { props } from "./types";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { props } from './types';
 
 export const NavbarDiv = styled.nav`
   background-color: white;
@@ -88,7 +88,7 @@ export const LoginButton = styled.button`
   }
 `;
 
-//subRoutes style
+// subRoutes style
 
 export const SubRoutesContainer = styled.div`
   position: absolute;
@@ -138,7 +138,7 @@ export const SubRoute = styled(Link)`
   }
 `;
 
-//expand style
+// expand style
 
 export const ExpandMenuDiv = styled.div``;
 
@@ -151,7 +151,7 @@ export const ExpandMenuButton = styled.div`
 `;
 
 export const ExpandSubRoutesContainer = styled.div<props>`
-  display: ${(props) => (props.isOpen ? "flex" : "none")};
+  display: ${(props) => (props.isOpen ? 'flex' : 'none')};
   flex-direction: column;
   padding: 1rem;
 `;
@@ -163,7 +163,7 @@ export const ExpandSubRoute = styled(Link)`
   font-size: 1rem;
 `;
 
-//drawer style
+// drawer style
 
 export const Backdrop = styled.div`
   height: 100%;
@@ -184,7 +184,7 @@ export const NavDrawer = styled.div<props>`
   width: 60%;
   background-color: white;
   transition: 0.3s ease;
-  transform: translateX(${(props) => (props.isOpen ? "0" : "-100%")});
+  transform: translateX(${(props) => (props.isOpen ? '0' : '-100%')});
 `;
 
 export const DrawerRightNav = styled.div`

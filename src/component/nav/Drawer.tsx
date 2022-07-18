@@ -1,6 +1,6 @@
-import React from "react";
-import ExpandMenu from "./ExpandMenu";
-import { props } from "./types";
+import React from 'react';
+import ExpandMenu from './ExpandMenu';
+import { props } from './types';
 import {
   Backdrop,
   DrawerNavbarBrand,
@@ -8,8 +8,8 @@ import {
   DrawerNavRoutes,
   DrawerRightNav,
   NavDrawer,
-} from "./style";
-import Button from "../button/Button";
+} from './style';
+import Button from '../button/Button';
 
 const Drawer = ({ isOpen, toggleDrawer, routes }: props) => {
   return (
@@ -39,7 +39,7 @@ const Drawer = ({ isOpen, toggleDrawer, routes }: props) => {
               buttonType="primary"
               type="submit"
               text="Login"
-              onClick={() => console.log("hello")}
+              onClick={() => console.log('hello')}
             />
           </div>
         </DrawerRightNav>
